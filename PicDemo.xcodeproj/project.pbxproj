@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		C569D5DC2802808400E9C6EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569D5DB2802808400E9C6EB /* AppDelegate.swift */; };
 		C569D5DE2802808400E9C6EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569D5DD2802808400E9C6EB /* SceneDelegate.swift */; };
-		C569D5E02802808400E9C6EB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569D5DF2802808400E9C6EB /* ViewController.swift */; };
+		C569D5E02802808400E9C6EB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569D5DF2802808400E9C6EB /* WelcomeViewController.swift */; };
 		C569D5E32802808400E9C6EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C569D5E12802808400E9C6EB /* Main.storyboard */; };
 		C569D5E52802808600E9C6EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C569D5E42802808600E9C6EB /* Assets.xcassets */; };
 		C569D5E82802808600E9C6EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C569D5E62802808600E9C6EB /* LaunchScreen.storyboard */; };
 		C569D5F32802808600E9C6EB /* PicDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569D5F22802808600E9C6EB /* PicDemoTests.swift */; };
 		C569D5FD2802808600E9C6EB /* PicDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569D5FC2802808600E9C6EB /* PicDemoUITests.swift */; };
 		C569D5FF2802808600E9C6EB /* PicDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569D5FE2802808600E9C6EB /* PicDemoUITestsLaunchTests.swift */; };
+		C569D61028028BFA00E9C6EB /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569D60F28028BFA00E9C6EB /* SearchViewController.swift */; };
+		C569D61228028C2900E9C6EB /* PictureSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569D61128028C2900E9C6EB /* PictureSearchViewController.swift */; };
+		C569D61428028C4A00E9C6EB /* CameraSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569D61328028C4A00E9C6EB /* CameraSearchViewController.swift */; };
+		C569D61628028C5E00E9C6EB /* TextSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569D61528028C5E00E9C6EB /* TextSearchViewController.swift */; };
+		C569D6192803086A00E9C6EB /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C569D6182803086A00E9C6EB /* IQKeyboardManagerSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +44,7 @@
 		C569D5D82802808400E9C6EB /* PicDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C569D5DB2802808400E9C6EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C569D5DD2802808400E9C6EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C569D5DF2802808400E9C6EB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C569D5DF2802808400E9C6EB /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		C569D5E22802808400E9C6EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C569D5E42802808600E9C6EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C569D5E72802808600E9C6EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +54,10 @@
 		C569D5F82802808600E9C6EB /* PicDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PicDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C569D5FC2802808600E9C6EB /* PicDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicDemoUITests.swift; sourceTree = "<group>"; };
 		C569D5FE2802808600E9C6EB /* PicDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C569D60F28028BFA00E9C6EB /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		C569D61128028C2900E9C6EB /* PictureSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureSearchViewController.swift; sourceTree = "<group>"; };
+		C569D61328028C4A00E9C6EB /* CameraSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSearchViewController.swift; sourceTree = "<group>"; };
+		C569D61528028C5E00E9C6EB /* TextSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C569D6192803086A00E9C6EB /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,8 +111,8 @@
 			children = (
 				C569D5DB2802808400E9C6EB /* AppDelegate.swift */,
 				C569D5DD2802808400E9C6EB /* SceneDelegate.swift */,
-				C569D5DF2802808400E9C6EB /* ViewController.swift */,
-				C569D5E12802808400E9C6EB /* Main.storyboard */,
+				C569D60B2802876200E9C6EB /* Views */,
+				C569D60C2802876D00E9C6EB /* Controllers */,
 				C569D5E42802808600E9C6EB /* Assets.xcassets */,
 				C569D5E62802808600E9C6EB /* LaunchScreen.storyboard */,
 				C569D5E92802808600E9C6EB /* Info.plist */,
@@ -127,6 +137,26 @@
 			path = PicDemoUITests;
 			sourceTree = "<group>";
 		};
+		C569D60B2802876200E9C6EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C569D5E12802808400E9C6EB /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C569D60C2802876D00E9C6EB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C569D5DF2802808400E9C6EB /* WelcomeViewController.swift */,
+				C569D60F28028BFA00E9C6EB /* SearchViewController.swift */,
+				C569D61128028C2900E9C6EB /* PictureSearchViewController.swift */,
+				C569D61328028C4A00E9C6EB /* CameraSearchViewController.swift */,
+				C569D61528028C5E00E9C6EB /* TextSearchViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +173,9 @@
 			dependencies = (
 			);
 			name = PicDemo;
+			packageProductDependencies = (
+				C569D6182803086A00E9C6EB /* IQKeyboardManagerSwift */,
+			);
 			productName = PicDemo;
 			productReference = C569D5D82802808400E9C6EB /* PicDemo.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +248,9 @@
 				Base,
 			);
 			mainGroup = C569D5CF2802808400E9C6EB;
+			packageReferences = (
+				C569D6172803086A00E9C6EB /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
 			productRefGroup = C569D5D92802808400E9C6EB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +294,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C569D5E02802808400E9C6EB /* ViewController.swift in Sources */,
+				C569D61428028C4A00E9C6EB /* CameraSearchViewController.swift in Sources */,
+				C569D5E02802808400E9C6EB /* WelcomeViewController.swift in Sources */,
 				C569D5DC2802808400E9C6EB /* AppDelegate.swift in Sources */,
+				C569D61028028BFA00E9C6EB /* SearchViewController.swift in Sources */,
+				C569D61628028C5E00E9C6EB /* TextSearchViewController.swift in Sources */,
 				C569D5DE2802808400E9C6EB /* SceneDelegate.swift in Sources */,
+				C569D61228028C2900E9C6EB /* PictureSearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,11 +477,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29T2PF824K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PicDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -453,7 +495,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -464,11 +506,13 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 29T2PF824K;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PicDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -480,7 +524,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -596,6 +640,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C569D6172803086A00E9C6EB /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.9;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C569D6182803086A00E9C6EB /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C569D6172803086A00E9C6EB /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C569D5D02802808400E9C6EB /* Project object */;
 }
