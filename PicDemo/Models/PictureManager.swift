@@ -14,12 +14,12 @@ protocol PictureManagerDelegate {
 
 struct PictureManager {
     
-    let pictureURL = "https://serpapi.com/search.json?tbm=isch&ijn=0&api_key=0323750bf433740e012db63eff8a13227a431254a84ba9cea605a2ec2158b016"
+    let pictureURL = "https://serpapi.com/search.json?tbm=isch&ijn=0"
     
     var delegate: PictureManagerDelegate?
     
     func fetchPicture(text: String, color: String) {
-        let urlString = "\(pictureURL)&q=\(text)"
+        let urlString = "\(pictureURL)&api_key=\(K.privateKey)&q=\(text)"
         performRequest(with: urlString)
     }
     

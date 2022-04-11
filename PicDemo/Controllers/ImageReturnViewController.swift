@@ -12,8 +12,6 @@ class ImageReturnViewController: UIViewController {
     var text = ""
     var color = ""
     
-    var pictureURL = ""
-    
     @IBOutlet weak var resultImageView: UIImageView!
     
     var pictureManager = PictureManager()
@@ -22,12 +20,10 @@ class ImageReturnViewController: UIViewController {
         super.viewDidLoad()
         pictureManager.delegate = self
         pictureManager.fetchPicture(text: text, color: color)
-        // Do any additional setup after loading the view.
     }
     
     func setImage(from url: String) {
-
-            // just not to cause a deadlock in UI!
+        // just not to cause a deadlock in UI!
         DispatchQueue.global().async {
             guard let imageURL = URL(string: url) else { return }
             guard let imageData = try? Data(contentsOf: imageURL) else { return }
@@ -50,7 +46,6 @@ extension ImageReturnViewController: PictureManagerDelegate {
             self.setImage(from: imageUrlString)
         }
     }
-    
     
     func didFailWithError(error: Error) {
         print(error)
