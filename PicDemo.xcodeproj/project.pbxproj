@@ -21,6 +21,11 @@
 		C569D61428028C4A00E9C6EB /* CameraSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569D61328028C4A00E9C6EB /* CameraSearchViewController.swift */; };
 		C569D61628028C5E00E9C6EB /* TextSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569D61528028C5E00E9C6EB /* TextSearchViewController.swift */; };
 		C569D6192803086A00E9C6EB /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C569D6182803086A00E9C6EB /* IQKeyboardManagerSwift */; };
+		C569D61C2803EAC900E9C6EB /* ImageReturnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569D61B2803EAC900E9C6EB /* ImageReturnViewController.swift */; };
+		C569D61E2803EB3F00E9C6EB /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569D61D2803EB3F00E9C6EB /* K.swift */; };
+		C569D6222804178500E9C6EB /* PictureData.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569D6212804178500E9C6EB /* PictureData.swift */; };
+		C569D6242804179700E9C6EB /* PictureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569D6232804179700E9C6EB /* PictureManager.swift */; };
+		C569D6262804350C00E9C6EB /* PictureURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569D6252804350C00E9C6EB /* PictureURL.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,11 @@
 		C569D61128028C2900E9C6EB /* PictureSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureSearchViewController.swift; sourceTree = "<group>"; };
 		C569D61328028C4A00E9C6EB /* CameraSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSearchViewController.swift; sourceTree = "<group>"; };
 		C569D61528028C5E00E9C6EB /* TextSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSearchViewController.swift; sourceTree = "<group>"; };
+		C569D61B2803EAC900E9C6EB /* ImageReturnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageReturnViewController.swift; sourceTree = "<group>"; };
+		C569D61D2803EB3F00E9C6EB /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
+		C569D6212804178500E9C6EB /* PictureData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureData.swift; sourceTree = "<group>"; };
+		C569D6232804179700E9C6EB /* PictureManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureManager.swift; sourceTree = "<group>"; };
+		C569D6252804350C00E9C6EB /* PictureURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureURL.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,11 +121,13 @@
 			children = (
 				C569D5DB2802808400E9C6EB /* AppDelegate.swift */,
 				C569D5DD2802808400E9C6EB /* SceneDelegate.swift */,
+				C569D6202804171E00E9C6EB /* Models */,
 				C569D60B2802876200E9C6EB /* Views */,
 				C569D60C2802876D00E9C6EB /* Controllers */,
 				C569D5E42802808600E9C6EB /* Assets.xcassets */,
 				C569D5E62802808600E9C6EB /* LaunchScreen.storyboard */,
 				C569D5E92802808600E9C6EB /* Info.plist */,
+				C569D61D2803EB3F00E9C6EB /* K.swift */,
 			);
 			path = PicDemo;
 			sourceTree = "<group>";
@@ -150,11 +162,30 @@
 			children = (
 				C569D5DF2802808400E9C6EB /* WelcomeViewController.swift */,
 				C569D60F28028BFA00E9C6EB /* SearchViewController.swift */,
-				C569D61128028C2900E9C6EB /* PictureSearchViewController.swift */,
-				C569D61328028C4A00E9C6EB /* CameraSearchViewController.swift */,
-				C569D61528028C5E00E9C6EB /* TextSearchViewController.swift */,
+				C569D61B2803EAC900E9C6EB /* ImageReturnViewController.swift */,
+				C569D61A2803EA8F00E9C6EB /* ThreeMainControllers */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C569D61A2803EA8F00E9C6EB /* ThreeMainControllers */ = {
+			isa = PBXGroup;
+			children = (
+				C569D61528028C5E00E9C6EB /* TextSearchViewController.swift */,
+				C569D61328028C4A00E9C6EB /* CameraSearchViewController.swift */,
+				C569D61128028C2900E9C6EB /* PictureSearchViewController.swift */,
+			);
+			path = ThreeMainControllers;
+			sourceTree = "<group>";
+		};
+		C569D6202804171E00E9C6EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C569D6212804178500E9C6EB /* PictureData.swift */,
+				C569D6232804179700E9C6EB /* PictureManager.swift */,
+				C569D6252804350C00E9C6EB /* PictureURL.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -294,10 +325,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C569D6242804179700E9C6EB /* PictureManager.swift in Sources */,
+				C569D61E2803EB3F00E9C6EB /* K.swift in Sources */,
+				C569D6262804350C00E9C6EB /* PictureURL.swift in Sources */,
 				C569D61428028C4A00E9C6EB /* CameraSearchViewController.swift in Sources */,
 				C569D5E02802808400E9C6EB /* WelcomeViewController.swift in Sources */,
 				C569D5DC2802808400E9C6EB /* AppDelegate.swift in Sources */,
 				C569D61028028BFA00E9C6EB /* SearchViewController.swift in Sources */,
+				C569D61C2803EAC900E9C6EB /* ImageReturnViewController.swift in Sources */,
+				C569D6222804178500E9C6EB /* PictureData.swift in Sources */,
 				C569D61628028C5E00E9C6EB /* TextSearchViewController.swift in Sources */,
 				C569D5DE2802808400E9C6EB /* SceneDelegate.swift in Sources */,
 				C569D61228028C2900E9C6EB /* PictureSearchViewController.swift in Sources */,
