@@ -8,5 +8,5 @@
 import Foundation
 
 struct PictureURL {
-    let url: String
+    let url: [String]
 }

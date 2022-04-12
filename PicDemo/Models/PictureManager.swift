@@ -47,7 +47,10 @@ struct PictureManager {
         
         do {
             let decodeData = try decoder.decode(PictureData.self, from: pictureData)
-            let url = decodeData.images_results[1].original
+            var url = [String]()
+            for image in decodeData.images_results {
+                url.append(image.original)
+            }
             
             let decodeModel = PictureURL(url: url)
             return decodeModel

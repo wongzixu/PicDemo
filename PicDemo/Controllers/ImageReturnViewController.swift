@@ -12,17 +12,29 @@ class ImageReturnViewController: UIViewController {
     var text = ""
     var color = ""
     
-    @IBOutlet weak var resultImageView: UIImageView!
+    @IBOutlet weak var resultImageScrollView: UIScrollView!
+    @IBOutlet weak var pageControl: UIPageControl!
     
     var pictureManager = PictureManager()
+    var imagesURLString = [String]()
+    var frame = CGRect.zero
 
     override func viewDidLoad() {
         super.viewDidLoad()
         pictureManager.delegate = self
+        pageControl.numberOfPages = 5
+        resultImageScrollView.isPagingEnabled = true
+        resultImageScrollView.delegate = self
         pictureManager.fetchPicture(text: text, color: color)
     }
     
-    func setImage(from url: String) {
+    func setURLStringToArray(pictureURLStringArray: [String]) {
+        for index in 0...4 {
+            imagesURLString.append(pictureURLStringArray[index])
+        }
+    }
+    
+    func setImage(from url: String, for ImageView: UIImageView) {
         // just not to cause a deadlock in UI!
         DispatchQueue.global().async {
             guard let imageURL = URL(string: url) else { return }
@@ -30,7 +42,7 @@ class ImageReturnViewController: UIViewController {
 
             let image = UIImage(data: imageData)
             DispatchQueue.main.async {
-                self.resultImageView.image = image
+                ImageView.image = image
             }
         }
     }
@@ -42,8 +54,10 @@ class ImageReturnViewController: UIViewController {
 extension ImageReturnViewController: PictureManagerDelegate {
     func didUpdatePicture(_ pictureManager: PictureManager, picture: PictureURL) {
         DispatchQueue.main.async {
-            let imageUrlString = picture.url
-            self.setImage(from: imageUrlString)
+            let imageUrlStringArray = picture.url
+            self.setURLStringToArray(pictureURLStringArray: imageUrlStringArray)
+            self.setupScreens()
+            // self.setImage(from: imageUrlString)
         }
     }
     
@@ -51,5 +65,37 @@ extension ImageReturnViewController: PictureManagerDelegate {
         print(error)
     }
     
+    
+}
+
+
+// MARK: - UIScrollView & UIPageControl method
+
+extension ImageReturnViewController: UIScrollViewDelegate {
+    
+    func setupScreens() {
+        for index in 0..<5 {
+            frame.origin.x = resultImageScrollView.frame.size.width * CGFloat(index)
+            frame.size = resultImageScrollView.frame.size
+            
+            let view = UIImageView(frame: frame)
+            setImage(from: imagesURLString[index], for: view)
+            self.resultImageScrollView.addSubview(view)
+        }
+        
+        resultImageScrollView.contentSize = CGSize(width: (resultImageScrollView.frame.size.width * CGFloat(5)), height: resultImageScrollView.frame.size.height)
+        
+        pageControl.addTarget(self, action: #selector(self.changePage(sender:)), for: UIControl.Event.valueChanged)
+    }
+    
+    @objc func changePage(sender: AnyObject) -> () {
+            let x = CGFloat(pageControl.currentPage) * resultImageScrollView.frame.size.width
+            resultImageScrollView.setContentOffset(CGPoint(x:x, y:0), animated: true)
+    }
+    
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let pageNumber = scrollView.contentOffset.x / scrollView.frame.size.width
+        pageControl.currentPage = Int(pageNumber)
+    }
     
 }
