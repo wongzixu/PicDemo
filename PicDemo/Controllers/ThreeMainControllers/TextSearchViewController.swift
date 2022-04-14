@@ -13,6 +13,8 @@ class TextSearchViewController: UIViewController {
     @IBOutlet weak var substanceKeywordTextField: UITextField!
     @IBOutlet weak var colorKeywordTextField: UITextField!
     
+    let standard = IdentifierStandard()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -26,7 +28,7 @@ class TextSearchViewController: UIViewController {
         if segue.identifier == K.segues.textToImage {
             let destinationVC = segue.destination as! ImageReturnViewController
             destinationVC.color = colorKeywordTextField.text ?? "red"
-            destinationVC.text = substanceKeywordTextField.text ?? "dog"
+            destinationVC.text = standard.getStandardIdentifier(substanceKeywordTextField.text ?? "dog")
         }
     }
 

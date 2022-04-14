@@ -219,6 +219,9 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="20"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="addPhotoTapped:" destination="Nct-G9-ew0" eventType="touchUpInside" id="BnH-J3-1Fp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1H-rB-bYY">
                                 <rect key="frame" x="119" y="737" width="152" height="38"/>
@@ -232,6 +235,9 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="20"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="searchButtonTapped:" destination="Nct-G9-ew0" eventType="touchUpInside" id="SIa-Bf-hrH"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8Qb-xv-ETs"/>
@@ -248,6 +254,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sc2-bp-kls"/>
+                    <connections>
+                        <outlet property="imageView" destination="sw7-BV-1sX" id="hXa-wu-OIM"/>
+                        <segue destination="Yxt-vb-70Z" kind="show" identifier="PhotoToImage" id="jKI-jg-yv7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SXE-gk-blc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -302,7 +312,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fVi-nc-aAT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5527.6923076923076" y="77.488151658767762"/>
+            <point key="canvasLocation" x="6015" y="-120"/>
         </scene>
         <!--Camera Search View Controller-->
         <scene sceneID="rFH-s5-cs0">
@@ -339,6 +349,9 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30" weight="heavy"/>
                                     <color key="baseForegroundColor" name="TouchBarBezel"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="cameraTapped:" destination="MpR-bT-8NN" eventType="touchUpInside" id="Wec-cf-Q6r"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KD5-Rc-RrQ">
                                 <rect key="frame" x="119" y="737" width="152" height="38"/>
@@ -352,6 +365,9 @@
                                     <fontDescription key="titleFontDescription" type="system" weight="heavy" pointSize="20"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="searchButtonTapped:" destination="MpR-bT-8NN" eventType="touchUpInside" id="Xg7-jG-fe0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Skz-18-LLQ"/>
@@ -368,6 +384,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="CII-LD-K0R"/>
+                    <connections>
+                        <outlet property="imageView" destination="4j9-vP-oM0" id="RQL-k5-Tjf"/>
+                        <segue destination="Yxt-vb-70Z" kind="show" identifier="CameraToImage" id="Alm-ZE-LO9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yOl-hr-Par" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -505,6 +525,9 @@
             <point key="canvasLocation" x="15.384615384615383" y="92.417061611374407"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="jKI-jg-yv7"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="calculate_background" width="375" height="812"/>
         <image name="camera.aperture" catalog="system" width="128" height="121"/>

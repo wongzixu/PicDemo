@@ -19,7 +19,9 @@ struct PictureManager {
     var delegate: PictureManagerDelegate?
     
     func fetchPicture(text: String, color: String) {
-        let urlString = "\(pictureURL)&api_key=\(K.privateKey)&q=\(text)"
+        // let urlString = "\(pictureURL)&api_key=\(K.privateKey)&q=\(text)"
+        let urlString = "\(pictureURL)&q=\(text)&api_key=\(K.privateKey)"
+        print(urlString)
         performRequest(with: urlString)
     }
     

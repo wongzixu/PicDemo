@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C528AC2D2807F682003C806D /* MobileNetV2.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = C528AC2C2807F682003C806D /* MobileNetV2.mlmodel */; };
+		C528AC3128080592003C806D /* IdentifierStandard.swift in Sources */ = {isa = PBXBuildFile; fileRef = C528AC3028080592003C806D /* IdentifierStandard.swift */; };
 		C569D5DC2802808400E9C6EB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569D5DB2802808400E9C6EB /* AppDelegate.swift */; };
 		C569D5DE2802808400E9C6EB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569D5DD2802808400E9C6EB /* SceneDelegate.swift */; };
 		C569D5E02802808400E9C6EB /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C569D5DF2802808400E9C6EB /* WelcomeViewController.swift */; };
@@ -46,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C528AC2C2807F682003C806D /* MobileNetV2.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileNetV2.mlmodel; sourceTree = "<group>"; };
+		C528AC3028080592003C806D /* IdentifierStandard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifierStandard.swift; sourceTree = "<group>"; };
 		C569D5D82802808400E9C6EB /* PicDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PicDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C569D5DB2802808400E9C6EB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C569D5DD2802808400E9C6EB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +100,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C528AC2B2807F63D003C806D /* ML Model */ = {
+			isa = PBXGroup;
+			children = (
+				C528AC2C2807F682003C806D /* MobileNetV2.mlmodel */,
+				C528AC3028080592003C806D /* IdentifierStandard.swift */,
+			);
+			path = "ML Model";
+			sourceTree = "<group>";
+		};
 		C569D5CF2802808400E9C6EB = {
 			isa = PBXGroup;
 			children = (
@@ -121,6 +134,7 @@
 			children = (
 				C569D5DB2802808400E9C6EB /* AppDelegate.swift */,
 				C569D5DD2802808400E9C6EB /* SceneDelegate.swift */,
+				C528AC2B2807F63D003C806D /* ML Model */,
 				C569D6202804171E00E9C6EB /* Models */,
 				C569D60B2802876200E9C6EB /* Views */,
 				C569D60C2802876D00E9C6EB /* Controllers */,
@@ -328,6 +342,7 @@
 				C569D6242804179700E9C6EB /* PictureManager.swift in Sources */,
 				C569D61E2803EB3F00E9C6EB /* K.swift in Sources */,
 				C569D6262804350C00E9C6EB /* PictureURL.swift in Sources */,
+				C528AC3128080592003C806D /* IdentifierStandard.swift in Sources */,
 				C569D61428028C4A00E9C6EB /* CameraSearchViewController.swift in Sources */,
 				C569D5E02802808400E9C6EB /* WelcomeViewController.swift in Sources */,
 				C569D5DC2802808400E9C6EB /* AppDelegate.swift in Sources */,
@@ -336,6 +351,7 @@
 				C569D6222804178500E9C6EB /* PictureData.swift in Sources */,
 				C569D61628028C5E00E9C6EB /* TextSearchViewController.swift in Sources */,
 				C569D5DE2802808400E9C6EB /* SceneDelegate.swift in Sources */,
+				C528AC2D2807F682003C806D /* MobileNetV2.mlmodel in Sources */,
 				C569D61228028C2900E9C6EB /* PictureSearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

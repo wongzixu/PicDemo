@@ -22,14 +22,14 @@ class ImageReturnViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         pictureManager.delegate = self
-        pageControl.numberOfPages = 5
+        pageControl.numberOfPages = 3
         resultImageScrollView.isPagingEnabled = true
         resultImageScrollView.delegate = self
         pictureManager.fetchPicture(text: text, color: color)
     }
     
     func setURLStringToArray(pictureURLStringArray: [String]) {
-        for index in 0...4 {
+        for index in 0...2 {
             imagesURLString.append(pictureURLStringArray[index])
         }
     }
@@ -74,7 +74,7 @@ extension ImageReturnViewController: PictureManagerDelegate {
 extension ImageReturnViewController: UIScrollViewDelegate {
     
     func setupScreens() {
-        for index in 0..<5 {
+        for index in 0..<3 {
             frame.origin.x = resultImageScrollView.frame.size.width * CGFloat(index)
             frame.size = resultImageScrollView.frame.size
             
@@ -83,7 +83,7 @@ extension ImageReturnViewController: UIScrollViewDelegate {
             self.resultImageScrollView.addSubview(view)
         }
         
-        resultImageScrollView.contentSize = CGSize(width: (resultImageScrollView.frame.size.width * CGFloat(5)), height: resultImageScrollView.frame.size.height)
+        resultImageScrollView.contentSize = CGSize(width: (resultImageScrollView.frame.size.width * CGFloat(3)), height: resultImageScrollView.frame.size.height)
         
         pageControl.addTarget(self, action: #selector(self.changePage(sender:)), for: UIControl.Event.valueChanged)
     }
