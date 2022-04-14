@@ -426,7 +426,7 @@
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="300" id="lQ7-g0-hX3"/>
                                                 </constraints>
-                                                <color key="textColor" red="0.84054750204086304" green="0.680275559425354" blue="0.92854064702987671" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" systemColor="systemPurpleColor"/>
                                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
                                                 <textInputTraits key="textInputTraits" returnKeyType="continue"/>
                                             </textField>
@@ -527,6 +527,9 @@
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
