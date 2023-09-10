@@ -8,6 +8,8 @@
 import Foundation
 
 struct K {
+
+    // TODO: This is the private key that need to input.
     static let privateKey = ""
     struct segues {
         static let textToImage = "TextToImage"
