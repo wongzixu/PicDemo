@@ -17,5 +17,5 @@ Using MVC design pattern we can divide our app into models, views designed with 
 It's a pritty simple App that with a very easy UI look. And our users can type the tree different searching way buttons to choose the way they want. And the final result view will displayed the 5 pictures that fetch from the Internet by an API.
 
 ## Use Notice
-This project use a personal use API with a private `Google Search` key, and may out of searching range for using. Therefore, for private reason we delete our private key number to avoide using too much. You can register for a private free account to get limit usage per month and paste your private key in the [K.swift](./PicDemo/K.swift) file. The public API is [Google Search API](https://serpapi.com).
+This project use a personal use API with a private `Google Search` key, and may out of searching range for using. Therefore, for private reason we delete our private key number to avoide using too much. You can register for a private free account to get limit usage per month and paste your private key in the [K.swift](./PicDemo/K.swift) file which contains the constant key value used in this App. The public API is [Google Search API](https://serpapi.com).
 
